@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Card = styled.div`
+export const CalculatorComponent = styled.div`
   width: 100%;
   height: 100%;
 
@@ -9,7 +9,7 @@ export const Card = styled.div`
   border-radius: 32px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 
   box-shadow: ${({ theme }) => theme.boxShadows[0]};

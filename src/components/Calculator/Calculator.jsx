@@ -6,15 +6,23 @@ import {Display} from "@/components/Calculator/Display/Display"
 import {operate} from "@/helpers/calc-operation"
 
 const operations = ['-', '+', '\\', '*']
+const additions = ['(', ')', '.']
+const expressionsArray = []
 
 export const Calculator = () => {
+
   const [total, setTotal] = useState('')
   const [next, setNext] = useState('')
   const [operation, setOperation] = useState('')
+  const [remembered, setRemembered] = useState('')
+  const [expression, setExpression] = useState('')
+
+
 
   const handleClick = buttonName => {
-    console.log(next, operation)
-    if (typeof buttonName === 'number') {
+
+  debugger
+    if (typeof buttonName === 'number' || additions.includes(buttonName)) {
       if (buttonName === 0 && !total) {
         return
       }
@@ -22,38 +30,24 @@ export const Calculator = () => {
         setTotal('' + buttonName.toString())
         setOperation('')
       }
-      // if(operations.includes(operation)){
-      //   setNext((Number(total) + Number(next) + buttonName).toString())
-      // }
       else{
         setTotal(total + buttonName.toString())
       }
-
-      // if(total) {
-      //   setTotal('' + buttonName.toString())
-      // }
-      // if (operation) {
-      //   if (next) {
-      //     setNext(next + buttonName)
-      //   }
-      //   setNext(buttonName)
-      // }
-      // if (next) {
-      //   const next1 = next === "0" ? buttonName : Number(next) + buttonName
-      //   setNext(next1)
-      //   setTotal('')
-      // } else {
-      //   setNext(buttonName.toString())
-      //   setTotal('')
-      // }
-
     }
-
     if (operations.includes(buttonName)) {
       if (next && operation) {
-        setNext(operate(total, next, operation))
-        setTotal('')
-        setOperation(buttonName)
+        if(buttonName !=='*' && buttonName !=="\\"){
+          setNext(operate(total, next, operation))
+          setTotal('')
+          setOperation(buttonName)
+        }
+        else {
+          setRemembered(operation + next)
+          setNext(total)
+          setTotal('')
+          setOperation(buttonName)
+        }
+
       }
       else {
         setNext(total)
@@ -65,16 +59,24 @@ export const Calculator = () => {
       setNext('')
       setTotal('')
       setOperation('')
+      setRemembered('')
     }
     if (buttonName === "CE") {
       setTotal('')
     }
     if (buttonName === "=") {
       if (next && operation) {
-        setTotal(operate(total, next, operation))
+        const remNum = Number(remembered||0)
+        setTotal((remNum>=0 ? remNum + Number(operate(total, next, operation))
+        : Math.abs(remNum) - Number(operate(total, next, operation))).toString())
         setNext('')
+        setRemembered('')
         setOperation("=")
       }
+    }
+    if(additions.includes(buttonName)){
+      setExpression(buttonName)
+      setTotal(buttonName)
     }
   }
 

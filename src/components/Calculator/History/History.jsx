@@ -1,8 +1,9 @@
 import React from 'react'
 
 import {HistoryStyled} from "@/components/Calculator/History/components"
+import PropTypes from "prop-types"
 
-export const History = () => {
+export const History = (props) => {
   return (
     <HistoryStyled>
       <h5>History</h5>
@@ -14,5 +15,9 @@ export const History = () => {
     </HistoryStyled>
   )
 }
+
+// History.propTypes = {
+//   expessions: PropTypes.array,
+// }
 
 

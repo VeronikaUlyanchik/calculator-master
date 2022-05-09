@@ -1,4 +1,3 @@
-
 export function operate(numberOne, numberTwo, operation) {
   const one = numberOne || "0"
   const two = numberTwo

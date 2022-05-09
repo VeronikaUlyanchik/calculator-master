@@ -1,32 +1,39 @@
-import React from 'react'
+import React, {useState , useEffect} from 'react'
+import {Select , ButtonClear} from "@/pages/Settings/components"
+
+const themes = ['Light theme', 'Colored theme', 'Dark theme']
 
 export const Setting = () => {
+  const [theme, setTheme] = useState(themes[0])
+  const [mode, setMode] = useState(false)
+
+  const changeMode = () => {
+    setMode(!mode)
+  }
+  const changeTheme = theme => {
+    setTheme(theme)
+    setMode(false)
+  }
+  useEffect(() => {
+    document.body.setAttribute('data-theme', theme)
+  }, [theme])
+
   return (
-    <div>
+    <Select>
       <h3>Settings</h3>
-    </div>
+      <h5>Switch theme</h5>
+      <div className="select">
+        <div onClick={changeMode} className="chosen">{theme}</div>
+        {mode && themes.filter(i => i !== theme).map(i => <div className="notChosen" onClick={() => changeTheme(i)}
+        key={i + theme}>{i}
+                                                          </div>)}
+      </div>
+      <ButtonClear>Clear All History</ButtonClear>
+    </Select>
   )
 }
 
 
-const SuperSelect = (
-    {
-      options,
-      onChange, onChangeOption,
-      ...restProps
-    }) => {
-    const mappedOptions = options ? options.map((i,index)=> <option key={i + '-' + index}>{i}</option>) : [];
 
-    const onChangeCallback = e => {
-      onChange && onChange(e)
-      onChangeOption && onChangeOption(e.currentTarget.value)
-    }
-
-    return (
-      <select onChange={onChangeCallback} {...restProps}>
-        {mappedOptions}
-      </select>
-    )
-  }
 
 

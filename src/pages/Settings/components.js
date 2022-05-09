@@ -1,41 +1,48 @@
 import styled from 'styled-components'
 
-export const HeaderStyled = styled.div`
-  background-color: #434343;
-  height: 70px;
+export const Select = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 16px;
-  padding: 0 20px;
+  padding: 40px;
+  position: relative;
   & h3{
-    color: white;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 100;
+    margin-bottom: 21px;
   }
-  & a{
-    color: #c1c1c1;
-    outline: none;
-    text-decoration: none;
-    margin-left: 12px;
+  & h5{
+    font-size: 13px;
+    font-weight: 600;
   }
-  & a.active{
-    color: white;
-    outline: white;
+  & .select{
     position: relative;
-  & {
-    &::after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 1px;
-      background-color: white;
-      top: 115%;
-      margin-left: -50px;
-      box-sizing: border-box;
-    }
+    border: 1px solid black;
+    width: 185px;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
   }
+  & .chosen{
+    padding: 10px 7px;
+    border-bottom: 1px solid;
   }
+  & .notChosen{
+    padding: 5px 7px;
+    border-bottom: 1px solid;
+  }
+`
+
+export const ButtonClear = styled.div`
+  width: 185px;
+  padding: 10px 7px;
+  background-color: #8080801c;
+  position: absolute;
+  top: 166px;
+  border-radius: 5px;
+  cursor: pointer;
 `
 

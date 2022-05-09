@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0066a268-dc10-42d6-95c5-abea7113b312" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Display/Display.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Display/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Display/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/History/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/History/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/Keypad.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/calc-operation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Settings/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Settings/index.jsx" afterDir="false" />
+    <list default="true" id="0066a268-dc10-42d6-95c5-abea7113b312" name="Changes" comment="styles, common operations are ready">
+      <change afterPath="$PROJECT_DIR$/src/components/SelecterTheme/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SelecterTheme/components.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SelecterTheme/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/themeReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/globalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/globalStyles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/calc-operation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/calc-operation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Settings/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.dev.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Calculator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -65,8 +54,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components\Calculator" />
       <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components" />
+      <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components\Calculator" />
       <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\pages" />
       <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components\Header" />
     </key>
@@ -105,8 +94,19 @@
       <workItem from="1651834402862" duration="8939000" />
       <workItem from="1651864943470" duration="10137000" />
       <workItem from="1651923543186" duration="17678000" />
-      <workItem from="1651955055973" duration="2135000" />
+      <workItem from="1651955055973" duration="6228000" />
+      <workItem from="1652011577771" duration="6890000" />
+      <workItem from="1652024490358" duration="288000" />
+      <workItem from="1652133189779" duration="2375000" />
     </task>
+    <task id="LOCAL-00001" summary="styles, common operations are ready">
+      <created>1651957323244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651957323244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,5 +122,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="styles, common operations are ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="styles, common operations are ready" />
   </component>
 </project>

@@ -29,9 +29,13 @@ export default createGlobalStyle`
     background-repeat: no-repeat;
   }
 
-  #root {
-    display: flex;
-    flex-direction: column;
-    //background: linear-gradient(to bottom, #c06c84da, #6c5b7bda);
+  body[data-theme = 'Light theme'] {
+    background-color: white;
+  }
+  body[data-theme = 'Dark theme'] {
+    background-color: gray;
+  }
+  body[data-theme = 'Colored theme'] {
+    background-color: #c06c84;
   }
 `

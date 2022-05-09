@@ -21,6 +21,8 @@ const size = {
   large: 1200,
 }
 
+const background = '#c86464'
+
 const above = Object.keys(size).reduce((acc, label) => {
   acc[label] = (...args) => css`
     @media (min-width: ${size[label]}px) {
@@ -44,6 +46,7 @@ export default {
   below,
   boxShadows,
   font,
+  background,
   spaces: [0, 4, 8, 16, 32, 64, 128],
   fontSizes: [12, 14, 16, 20, 24, 32, 40, 56, 72, 80],
   colors: {

@@ -10,7 +10,7 @@ export function operate(numberOne, numberTwo, operation) {
   if (operation === "*") {
     return (+one * +two).toString()
   }
-  if (operation === "\\") {
+  if (operation === "/") {
     if (two === "0") {
       return "0"
     } else {

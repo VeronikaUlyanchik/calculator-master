@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0066a268-dc10-42d6-95c5-abea7113b312" name="Changes" comment="styles, common operations are ready">
-      <change afterPath="$PROJECT_DIR$/src/components/SelecterTheme/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SelecterTheme/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SelecterTheme/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/themeReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/globalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/globalStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/Keypad.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/Keypad.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/calc-operation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/calc-operation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Settings/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.dev.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +87,8 @@
       <workItem from="1651955055973" duration="6228000" />
       <workItem from="1652011577771" duration="6890000" />
       <workItem from="1652024490358" duration="288000" />
-      <workItem from="1652133189779" duration="2375000" />
+      <workItem from="1652133189779" duration="5685000" />
+      <workItem from="1652171965542" duration="4987000" />
     </task>
     <task id="LOCAL-00001" summary="styles, common operations are ready">
       <created>1651957323244</created>
@@ -106,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651957323244</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="styles, common operations are ready">
+      <created>1652135677186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652135677186</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

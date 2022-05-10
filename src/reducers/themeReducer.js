@@ -1,8 +1,18 @@
 import React from 'react'
-import { handleActions } from 'redux-actions'
+import {handleActions, createAction} from 'redux-actions'
+
 
 const INITIAL_STATE = {
-  theme: "Light theme",
+  theme: 'Light theme',
 }
 
-export default handleActions({}, INITIAL_STATE)
+export const changeTheme = createAction(
+  'CHANGE_THEME',
+  theme => theme,
+)
+
+export default handleActions({
+  CHANGE_THEME: (state, action) => ({
+    theme: action.payload,
+  }),
+}, INITIAL_STATE)

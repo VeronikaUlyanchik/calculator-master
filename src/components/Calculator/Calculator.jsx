@@ -4,13 +4,15 @@ import {History} from "@/components/Calculator/History/History"
 import {Keypad} from "@/components/Calculator/Keypad/Keypad"
 import {Display} from "@/components/Calculator/Display/Display"
 import {operate} from "@/helpers/calc-operation"
+import {useDispatch} from "react-redux"
+import {addToHistory} from "@/reducers/historyReducer";
 
 const operations = ['-', '+', '/', '*']
 const additions = ['(', ')', '.']
-const expressionsArray = []
+
 
 export const Calculator = () => {
-
+  const dispatch = useDispatch()
   const [total, setTotal] = useState('')
   const [prev, setPrev] = useState('')
   const [operation, setOperation] = useState('')
@@ -75,7 +77,12 @@ export const Calculator = () => {
         setPrev(total)
         setTotal('')
         setOperation(buttonName)
-        setExpression([...expression,buttonName])
+        if (operation === '=') {
+          setExpression([...expression,total,buttonName])
+        }
+        else {
+          setExpression([...expression,buttonName])
+        }
       }
     }
     if (buttonName === "C") {
@@ -97,7 +104,7 @@ export const Calculator = () => {
         setPrev('')
         setRemembered('')
         setOperation("=")
-        setToHistory()
+        dispatch(addToHistory(expression))
         setExpression([])
       }
     }
@@ -107,10 +114,7 @@ export const Calculator = () => {
     }
   }
 
-  const setToHistory = () => {
-    return expression
-  }
-  console.log(expression)
+
   return (
     <CalculatorStyled>
       <Display total={total || prev || 0}/>

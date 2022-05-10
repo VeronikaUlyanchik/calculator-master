@@ -37,6 +37,7 @@ export const Select = styled.div`
 `
 
 export const ButtonClear = styled.div`
+  border: 1px solid black;
   width: 185px;
   padding: 10px 7px;
   background-color: #8080801c;
@@ -44,5 +45,8 @@ export const ButtonClear = styled.div`
   top: 166px;
   border-radius: 5px;
   cursor: pointer;
+  & :active{
+    transform: scale(0.95);
+  }
 `
 

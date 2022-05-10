@@ -21,6 +21,7 @@ export const HistoryStyled = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    letter-spacing: 5px;
   }
 `
 

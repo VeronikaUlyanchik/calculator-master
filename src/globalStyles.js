@@ -1,16 +1,16 @@
 import { createGlobalStyle } from 'styled-components'
 
-import theme from './theme'
 
 export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: ${theme.font};
+    font-family: ${props => props.theme.font};
   }
 
   html, body {
+    overflow: hidden;
     width: 100%;
     height: 100%;
   }
@@ -26,15 +26,6 @@ export default createGlobalStyle`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-  body[data-theme = 'Light theme'] {
-    background-color: white;
-  }
-  body[data-theme = 'Dark theme'] {
-    background-color: gray;
-  }
-  body[data-theme = 'Colored theme'] {
-    background-color: #c06c84;
+    background-color:  ${props => props.theme.background};
   }
 `

@@ -19,9 +19,6 @@ export const Setting = () => {
    dispatch(changeTheme(theme))
     setMode(false)
   }
-  useEffect(() => {
-    document.body.setAttribute('data-theme', commonTheme)
-  }, [commonTheme])
 
   const clearHistoryHandler = () => {
     dispatch(clearHistory())
@@ -40,6 +37,7 @@ export const Setting = () => {
     </Select>
   )
 }
+
 
 
 

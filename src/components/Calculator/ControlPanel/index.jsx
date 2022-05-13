@@ -1,8 +1,8 @@
 import React from 'react'
 
-import theme from '@/theme'
+import theme from '@/lightTheme'
 
-import { Loader } from './components'
+import { Loader } from 'src/components/Calculator/Display/components'
 
 const LOADER_SIZE = 100
 

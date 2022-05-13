@@ -16,6 +16,11 @@ export function operate(numberOne, numberTwo, operation) {
     } else {
       return (+two / +one).toString()
     }}
-
   return ''
 }
+  export const expressionOperate = str =>{
+    str = str.replace('(', '')
+    str = str.replace(')', '')
+  return parseInt(str).toString()
+}
+

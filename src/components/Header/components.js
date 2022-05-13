@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderStyled = styled.div`
-  background-color: #434343;
+  background-color: ${props => props.theme.backgroundHeader};
   height: 70px;
   width: 100%;
   display: flex;
@@ -13,6 +13,7 @@ export const HeaderStyled = styled.div`
     color: white;
     font-size: 16px;
     font-weight: 100;
+    cursor: pointer;
   }
   & a{
     color: #c1c1c1;

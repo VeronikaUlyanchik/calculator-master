@@ -1,8 +1,9 @@
-import { handleActions , createAction } from 'redux-actions'
+import {handleActions, createAction} from 'redux-actions'
 
 
 const INITIAL_STATE = {
   history: [],
+  openHistory: false,
 }
 
 export const addToHistory = createAction(
@@ -12,12 +13,21 @@ export const addToHistory = createAction(
 export const clearHistory = createAction(
   'CLEAR_HISTORY',
 )
+export const closeOpenHistory = createAction(
+  'CLOSE_OPEN_HISTORY',
+)
 
 export default handleActions({
-  ADD_TO_HISTORY: (state, action) =>({
-    history: [action.payload,...state.history],
+  ADD_TO_HISTORY: (state, action) => ({
+    ...state,
+    history: [action.payload, ...state.history],
   }),
-  CLEAR_HISTORY: () =>({
+  CLEAR_HISTORY: state => ({
+    ...state,
     history: [],
+  }),
+  CLOSE_OPEN_HISTORY: state => ({
+    ...state,
+    openHistory: !state.openHistory,
   }),
 }, INITIAL_STATE)

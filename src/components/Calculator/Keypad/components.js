@@ -21,9 +21,9 @@ export const Button = styled.button`
   outline: none;
   padding: 16px;
   font-weight: 500;
-  background: none;
+  background: ${props => props.theme.buttonColor};
   border-radius: 18px;
-  border: 1px solid #a99e9e;
+  border: 1px solid ${props => props.theme.borderColor};
   position: relative;
   color: black;
   font-size: 3vw;
@@ -31,6 +31,9 @@ export const Button = styled.button`
   cursor: pointer;
   &:hover {
     background: rgba(128, 128, 128, 0.77);
+  }
+  &:active{
+    transform: scale(0.95);
   }
 `
 

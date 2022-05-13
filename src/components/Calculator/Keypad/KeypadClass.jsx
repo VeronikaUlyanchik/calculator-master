@@ -11,29 +11,30 @@ const btnValues = [
   [".", "(", 0, ")", "CE"],
 ]
 
-export const Keypad = props => {
+export class KeypadClass extends React.Component{
 
-  const onClickHandler = n => {
-    props.onHandlerClick(n)
+   onClickHandler = n => {
+    this.props.onHandlerClick(n)
   }
 
+  render() {
   return (
    <KeypadStyled>
      <div>
        {
          btnValues.flat().map(item =>
-           <Button key={`item${item}`} onClick={()=>onClickHandler(item)}>
+           <Button key={`item${item}`} onClick={()=>this.onClickHandler(item)}>
              {item}
            </Button>,
          )
        }
      </div>
-
    </KeypadStyled>
   )
 }
+}
 
-Keypad.propTypes = {
+KeypadClass.propTypes = {
   onHandlerClick: PropTypes.func.isRequired,
 }
 

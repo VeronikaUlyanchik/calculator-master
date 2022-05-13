@@ -4,7 +4,8 @@ export const CalculatorStyled = styled.div`
   grid-template-areas:
     "display display history"
     "keypad keypad history"
-    "keypad keypad history";
+    "keypad keypad history"
+    "keypad keypad panel";
   grid-template-rows: 0fr 4fr 80px;
   grid-template-columns: 1fr 1fr 17%;
   grid-gap: 5px;

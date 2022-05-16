@@ -1742,6 +1742,10 @@ object-assign
 
 // CONCATENATED MODULE: ./node_modules/value-equal/esm/value-equal.js
 
+// Test for strict equality first.
+
+// Otherwise, if either of them == null they are not equal.
+
 // CONCATENATED MODULE: ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js
 
 // CONCATENATED MODULE: ./node_modules/history/esm/history.js
@@ -1844,6 +1848,18 @@ object-assign
 /**
  * The public API for prompting the user before navigating away from a screen.
  */
+
+/**
+ * Public API for generating a URL pathname from a path and parameters.
+ */
+
+/**
+ * The public API for navigating programmatically with a component.
+ */
+
+// When rendering in a static context,
+
+// set the new location immediately.
 
 /**
  * Public API for matching a URL pathname to a path.

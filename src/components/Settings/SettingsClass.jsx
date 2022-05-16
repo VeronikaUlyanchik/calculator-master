@@ -3,14 +3,15 @@ import {Select , ButtonClear} from "@/pages/Settings/components"
 import {clearHistory} from "@/reducers/historyReducer"
 import {changeTheme} from "@/reducers/themeReducer"
 import {connect} from "react-redux"
+import PropTypes from "prop-types"
 
 const themes = ['Light theme', 'Colored theme', 'Dark theme']
 
-class SettingClass extends React.Component {
+class SettingsClass extends React.Component {
+
   state = {
     selectMode: false,
   }
-
 
   handleMode = () => {
     this.setState({
@@ -23,10 +24,6 @@ class SettingClass extends React.Component {
     this.setState({
       selectMode: false,
     })
-  }
-
-  componentDidUpdate(){
-    document.body.setAttribute('data-theme', this.props.commonTheme)
   }
 
   handleClearHistory = () => {
@@ -55,4 +52,10 @@ const mapStateToProps = state => ({
   commonTheme: state.theme.theme,
 })
 
-export default connect(mapStateToProps,{clearHistory, changeTheme})(SettingClass)
+export default connect(mapStateToProps,{clearHistory, changeTheme})(SettingsClass)
+
+SettingsClass.propTypes ={
+  commonTheme: PropTypes.string.isRequired,
+  clearHistory: PropTypes.func.isRequired,
+  changeTheme: PropTypes.func.isRequired,
+}

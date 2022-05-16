@@ -6,7 +6,7 @@ import {changeTheme} from "@/reducers/themeReducer"
 
 const themes = ['Light theme', 'Colored theme', 'Dark theme']
 
-export const Setting = () => {
+export const Settings = () => {
   const dispatch = useDispatch()
   const commonTheme = useSelector(state => state.theme.theme)
 

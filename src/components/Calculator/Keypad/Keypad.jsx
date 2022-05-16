@@ -1,39 +1,95 @@
-import React , {useState} from 'react'
+import React from 'react'
+import {KeypadStyled, Button} from "@/components/Calculator/Keypad/components"
+import {useSelector, useDispatch} from "react-redux"
+import {addOperation, calculate, deleteAll, clearLast, addToDisplay, changeSign} from "@/reducers/calculatorReducer"
+import {addToHistory} from "@/reducers/historyReducer"
 
-import {KeypadStyled,Button} from "@/components/Calculator/Keypad/components"
-import PropTypes from "prop-types"
 
+export const Keypad = () => {
+  const dispatch = useDispatch()
+  const expression = useSelector(state => state.calculator.expression)
+  const total = useSelector(state => state.calculator.total)
+  const updateDisplayHandler = button => {
+    if (button === '0' && !total) {
+      return
+    }
+    if (typeof Number(button) === 'number') {
+        dispatch(addToDisplay(button))
+      }
 
-const btnValues = [
-  ["C", 7, 8, 9 , "*"],
-  ["-", 4, 5, 6 , "/" ],
-  ["+", 1, 2, 3 , "="],
-  [".", "(", 0, ")", "CE"],
-]
-
-export const Keypad = props => {
-
-  const onClickHandler = n => {
-    props.onHandlerClick(n)
   }
 
-  return (
-   <KeypadStyled>
-     <div>
-       {
-         btnValues.flat().map(item =>
-           <Button key={`item${item}`} onClick={()=>onClickHandler(item)}>
-             {item}
-           </Button>,
-         )
-       }
-     </div>
+  const clearLastHandler = () => {
+    dispatch(clearLast())
+  }
 
-   </KeypadStyled>
+  const operatorHandler = button => {
+    dispatch(addOperation(button))
+  }
+
+  const calculateHandler = () => {
+    total && dispatch(addToHistory(expression))
+    dispatch(calculate(expression))
+  }
+
+  const deleteValueHandler = () => {
+    dispatch(deleteAll())
+  }
+
+  const updateDotHandler = () => {
+    if (!String(total).includes('.')) {
+      dispatch(addToDisplay('.'))
+    }
+  }
+
+  const changeSignHandler = () => {
+    dispatch(changeSign())
+  }
+  const btnValues = [
+    [
+      {value: 'C', method: deleteValueHandler},
+      {value: '7', method: updateDisplayHandler},
+      {value: '8', method: updateDisplayHandler},
+      {value: '9', method: updateDisplayHandler},
+      {value: '*', method: operatorHandler},
+    ],
+    [
+      {value: '-', method: operatorHandler},
+      {value: '4', method: updateDisplayHandler},
+      {value: '5', method: updateDisplayHandler},
+      {value: '6', method: updateDisplayHandler},
+      {value: '/', method: operatorHandler},
+    ],
+    [
+      {value: '+', method: operatorHandler},
+      {value: '1', method: updateDisplayHandler},
+      {value: '2', method: updateDisplayHandler},
+      {value: '3', method: updateDisplayHandler},
+      {value: '=', method: calculateHandler},
+    ],
+    [
+      {value: '.', method: updateDotHandler},
+      {value: '%', method: operatorHandler},
+      {value: '0', method: updateDisplayHandler},
+      {value: '+-', method: changeSignHandler},
+      {value: 'CE', method: clearLastHandler},
+    ],
+  ]
+  return (
+    <KeypadStyled>
+      <div>
+        {
+          btnValues.flat().map((item, i) =>
+            <Button key={`item${i}`} onClick={() => {
+              item.method(item.value)
+            }}>
+              {item.value}
+            </Button>,
+          )
+        }
+      </div>
+    </KeypadStyled>
   )
 }
 
-Keypad.propTypes = {
-  onHandlerClick: PropTypes.func.isRequired,
-}
 

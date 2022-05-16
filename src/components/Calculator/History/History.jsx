@@ -13,7 +13,7 @@ export const History = () => {
     <HistoryStyled left={opened ? "0px" : "1000px"}>
       <h5>History</h5>
       <div className="historyContainer">
-        {history.map(h=> <div key={h}>{h}</div>)}
+        {history.map((h,i)=> <div key={i}>{h}</div>)}
       </div>
     </HistoryStyled>
   )

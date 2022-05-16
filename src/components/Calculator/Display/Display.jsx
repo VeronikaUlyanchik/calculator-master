@@ -11,7 +11,7 @@ export const Display = props => {
   )
 }
 
-Display.propTypes = {
-  total: PropTypes.number.isRequired,
-}
+// Display.propTypes = {
+//   total: PropTypes.string.isRequired,
+// }
 

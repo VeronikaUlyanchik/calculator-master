@@ -14,13 +14,14 @@ export function operate(numberOne, numberTwo, operation) {
     if (two === "0") {
       return "0"
     } else {
-      return (+two / +one).toString()
+      return (Number(two) / Number(one)).toString()
     }}
+  if (operation === "%") {
+    return (Number(two) % Number(one)).toString()
+  }
   return ''
 }
-  export const expressionOperate = str =>{
-    str = str.replace('(', '')
-    str = str.replace(')', '')
-  return parseInt(str).toString()
-}
+
+
+
 

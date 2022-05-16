@@ -3,7 +3,7 @@ import {handleActions, createAction} from 'redux-actions'
 
 const INITIAL_STATE = {
   history: [],
-  openHistory: false,
+  openHistory: true,
 }
 
 export const addToHistory = createAction(

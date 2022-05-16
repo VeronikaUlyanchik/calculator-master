@@ -1,19 +1,34 @@
 import React from 'react'
-import {DisplayStyled} from "@/components/Calculator/Display/components"
 import PropTypes from "prop-types"
+import {closeOpenHistory} from "@/reducers/historyReducer";
+import {PanelStyled} from "@/components/Calculator/ControlPanel/components"
+import {connect} from "react-redux";
 
 
-export class DisplayClass extends React.Component {
+class ControlPanelClass extends React.Component {
+
+  handleHistoryMode = () => {
+    this.props.closeOpenHistory()
+  }
+
   render() {
-  return (
-    <DisplayStyled>
-      {this.props.total}
-    </DisplayStyled>
-  )
+    return (
+      <PanelStyled onClick={this.handleHistoryMode}>
+        {this.props.openHistory ? "Close" : "Open"} History
+      </PanelStyled>
+    )
+  }
 }
+const mapStateToProps = state => ({
+  openHistory: state.history.openHistory,
+})
+
+export default connect(mapStateToProps,{closeOpenHistory} )(ControlPanelClass)
+
+ControlPanelClass.propTypes ={
+  openHistory: PropTypes.bool.isRequired,
+  closeOpenHistory: PropTypes.func.isRequired,
 }
 
-DisplayClass.propTypes = {
-  total: PropTypes.number.isRequired,
-}
+
 

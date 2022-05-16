@@ -1,48 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0066a268-dc10-42d6-95c5-abea7113b312" name="Changes" comment="expressions to history and fixing bugs">
-      <change afterPath="$PROJECT_DIR$/src/coloredTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/CalculatorClass.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/ControlPanel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/ControlPanelClass.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Display/DisplayClass.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/History/HistoryClass.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/KeypadClass.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lightTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Settings/SettingsClass.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/modeReducer.js" afterDir="false" />
+    <list default="true" id="0066a268-dc10-42d6-95c5-abea7113b312" name="Changes" comment="themes and fixing bugs">
+      <change afterPath="$PROJECT_DIR$/src/components/Settings/components.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Settings/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Setting.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/calculatorReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Display/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Display/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Display/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Display/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/CalculatorClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/CalculatorClass.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/ControlPanelClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/ControlPanelClass.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Display/Display.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Display/Display.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/HistoryClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/HistoryClass.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/components.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/Keypad.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/Keypad.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/KeypadClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/KeypadClass.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/components.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SelecterTheme/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SelecterTheme/components.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SelecterTheme/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/globalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/globalStyles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/calc-operation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/calc-operation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Settings/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Settings/SettingsClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/SettingsClass.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/historyReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/historyReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/darkTheme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +38,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -72,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -81,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\reducers" />
+      <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components\Settings" />
+      <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components" />
       <recent name="C:\it-incubator\modsen\education-task-calculator-master\src" />
       <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components\Calculator" />
-      <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\reducers" />
-      <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\pages\Settings" />
-      <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components\Calculator\Keypad" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components\Calculator" />
@@ -129,7 +115,13 @@
       <workItem from="1652171965542" duration="16726000" />
       <workItem from="1652208821491" duration="249000" />
       <workItem from="1652348423979" duration="20207000" />
-      <workItem from="1652460013930" duration="13200000" />
+      <workItem from="1652460013930" duration="13445000" />
+      <workItem from="1652520103542" duration="8807000" />
+      <workItem from="1652531612941" duration="6995000" />
+      <workItem from="1652554911328" duration="94000" />
+      <workItem from="1652557259429" duration="5963000" />
+      <workItem from="1652609484813" duration="156000" />
+      <workItem from="1652694909537" duration="1959000" />
     </task>
     <task id="LOCAL-00001" summary="styles, common operations are ready">
       <created>1651957323244</created>
@@ -159,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652191303225</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="themes and fixing bugs">
+      <created>1652482144371</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652482144372</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +179,7 @@
     <MESSAGE value="styles, common operations are ready" />
     <MESSAGE value="expressions to history and fixing bags" />
     <MESSAGE value="expressions to history and fixing bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="expressions to history and fixing bugs" />
+    <MESSAGE value="themes and fixing bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="themes and fixing bugs" />
   </component>
 </project>

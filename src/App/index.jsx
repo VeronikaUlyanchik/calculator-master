@@ -3,8 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 
 import {Header} from "@/components/Header/Header"
 import Home from "@/pages/Home/index"
-import {Setting} from "@/pages/Settings/Settings"
-import SettingClass from "@/pages/Settings/SettingsClass"
+import {Setting} from "@/pages/Settings/Setting"
 import lightTheme from "@/lightTheme"
 import {ThemeProvider} from "styled-components"
 import GlobalStyles from "@/globalStyles"

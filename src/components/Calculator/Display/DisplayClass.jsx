@@ -14,6 +14,6 @@ export class DisplayClass extends React.Component {
 }
 
 DisplayClass.propTypes = {
-  total: PropTypes.number.isRequired,
+  total: PropTypes.string.isRequired,
 }
 

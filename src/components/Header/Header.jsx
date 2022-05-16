@@ -16,8 +16,8 @@ export const Header = () => {
     <HeaderStyled>
       <h3 onClick={toggleMode}> {funcMode ? 'Functional ' : 'Class '}Calculator App</h3>
       <div>
-        <NavLink to="/calculator-home"> Home </NavLink>
-        <NavLink to="/calculator-settings"> Settings </NavLink>
+        <NavLink to="/home"> Home </NavLink>
+        <NavLink to="/settings"> Settings </NavLink>
       </div>
     </HeaderStyled>
   )

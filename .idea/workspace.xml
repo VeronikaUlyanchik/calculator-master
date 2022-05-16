@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0066a268-dc10-42d6-95c5-abea7113b312" name="Changes" comment="themes and fixing bugs">
-      <change afterPath="$PROJECT_DIR$/src/components/Settings/components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Settings/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Setting.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/calculatorReducer.js" afterDir="false" />
+    <list default="true" id="0066a268-dc10-42d6-95c5-abea7113b312" name="Changes" comment="refactor to reducers">
+      <change afterPath="$PROJECT_DIR$/build/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bundle.js.LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/init.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/init.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Calculator.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/CalculatorClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/CalculatorClass.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/ControlPanelClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/ControlPanelClass.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/ControlPanel/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/Display/Display.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Display/Display.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Display/DisplayClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Display/DisplayClass.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Display/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Display/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/History.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/HistoryClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/HistoryClass.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/Keypad.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/Keypad.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/History/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/History/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/KeypadClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/KeypadClass.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/calc-operation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/calc-operation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Settings/Settings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Settings/SettingsClass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings/SettingsClass.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/historyReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/historyReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/Keypad/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calculator/Keypad/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Calculator/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Settings/Setting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Settings/Setting.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="redux-branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,12 +54,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28kT0vFIUOI21WB5U3UEykckyDg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -77,7 +85,47 @@
       <recent name="C:\it-incubator\modsen\education-task-calculator-master\src\components\Calculator" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.cypress:test">
+    <configuration name="cypress:open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cypress:open" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="cypress:run" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cypress:run" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="cypress:test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cypress:test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,6 +138,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.cypress:open" />
+        <item itemvalue="npm.cypress:test" />
+        <item itemvalue="npm.cypress:run" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -176,6 +228,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="styles, common operations are ready" />
     <MESSAGE value="expressions to history and fixing bags" />
     <MESSAGE value="expressions to history and fixing bugs" />

@@ -1,11 +1,11 @@
 import React from 'react'
 import {CalculatorStyled} from "@/components/Calculator/components"
-import {DisplayClass} from "@/components/Calculator/Display/DisplayClass"
-import HistoryClass from "@/components/Calculator/History/HistoryClass"
-import KeypadClass from "@/components/Calculator/Keypad/KeypadClass"
 import {connect} from "react-redux"
-import ControlPanelClass from "@/components/Calculator/ControlPanel/ControlPanelClass"
 import PropTypes from "prop-types"
+import {ControlPanelClass} from "@/components/Calculator/ControlPanel/index"
+import {DisplayClass} from "@/components/Calculator/Display/index"
+import {HistoryClass} from "@/components/Calculator/History/index"
+import {KeypadClass} from "@/components/Calculator/Keypad/index"
 
 
 
@@ -14,7 +14,7 @@ class CalculatorClass extends React.Component {
   render() {
     return (
       <CalculatorStyled>
-        <DisplayClass total={this.props.total || this.props.prev || 0}/>
+        <DisplayClass total={this.props.total || this.props.prev || '0'}/>
         <HistoryClass/>
         <KeypadClass/>
         <ControlPanelClass/>

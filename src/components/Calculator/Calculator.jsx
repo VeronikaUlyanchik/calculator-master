@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
+import React  from 'react'
 import {CalculatorStyled} from "@/components/Calculator/components"
-import {Keypad} from "@/components/Calculator/Keypad/Keypad"
-import {Display} from "@/components/Calculator/Display/Display"
-import {ControlPanel} from "@/components/Calculator/ControlPanel/ControlPanel"
 import {useSelector} from "react-redux"
-import History from "@/components/Calculator/History/index"
+import {ControlPanel} from "./ControlPanel"
+import {Display} from "@/components/Calculator/Display/index"
+import {Keypad} from "@/components/Calculator/Keypad/index"
+import {History} from "@/components/Calculator/History/index"
+
 
 
 

@@ -2,20 +2,18 @@ import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
 import Application from '@/App'
 
 import { store } from '@/store'
+import { HashRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <Application />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>,
   document.getElementById('root'),
 )
-// минус самый первый может набираться

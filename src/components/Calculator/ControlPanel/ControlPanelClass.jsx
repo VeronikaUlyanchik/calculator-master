@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from "prop-types"
-import {closeOpenHistory} from "@/reducers/historyReducer";
+import {closeOpenHistory} from "@/reducers/historyReducer"
 import {PanelStyled} from "@/components/Calculator/ControlPanel/components"
-import {connect} from "react-redux";
+import {connect} from "react-redux"
 
 
-class ControlPanelClass extends React.Component {
+class ControlPanelC extends React.Component {
 
   handleHistoryMode = () => {
     this.props.closeOpenHistory()
@@ -23,9 +23,9 @@ const mapStateToProps = state => ({
   openHistory: state.history.openHistory,
 })
 
-export default connect(mapStateToProps,{closeOpenHistory} )(ControlPanelClass)
+export const ControlPanelClass = connect(mapStateToProps,{closeOpenHistory} )(ControlPanelC)
 
-ControlPanelClass.propTypes ={
+ControlPanelC.propTypes ={
   openHistory: PropTypes.bool.isRequired,
   closeOpenHistory: PropTypes.func.isRequired,
 }

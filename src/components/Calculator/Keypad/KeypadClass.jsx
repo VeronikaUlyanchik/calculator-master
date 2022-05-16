@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React from 'react'
 
 import {KeypadStyled,Button} from "@/components/Calculator/Keypad/components"
 import PropTypes from "prop-types"
@@ -7,7 +7,7 @@ import {addToHistory} from "@/reducers/historyReducer"
 import {connect} from "react-redux";
 
 
-class KeypadClass extends React.Component{
+class KeypadClassC extends React.Component{
 
   updateDisplayHandler = button => {
     if (button === '0' && !this.props.total) {
@@ -98,9 +98,9 @@ const mapStateToProps = state => ({
   total : state.calculator.total,
 })
 
-export default connect(mapStateToProps,{addToDisplay , clearLast , addOperation , addToHistory , calculate , deleteAll, changeSign })(KeypadClass)
+export const KeypadClass = connect(mapStateToProps,{addToDisplay , clearLast , addOperation , addToHistory , calculate , deleteAll, changeSign })(KeypadClassC)
 
-KeypadClass.propTypes = {
+KeypadClassC.propTypes = {
   expression : PropTypes.array.isRequired,
   total : PropTypes.string.isRequired,
   addToDisplay: PropTypes.func.isRequired,
